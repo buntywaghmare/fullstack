@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Examples</title>
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Element Selector */
+        p {
+            color: blue; /* Text color */
+            font-size: 16px; /* Font size */
+            margin: 10px; /* Margin */
+            padding: 10px; /* Padding */
+            border: 1px solid #ddd; /* Border */
+            background-color: #f9f9f9; /* Background color */
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #special-text {
+            color: green;
+            font-size: 20px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        /* Font Properties */
+        .font-example {
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Text Properties */
+        .text-example {
+            text-align: center;
+            line-height: 1.8;
+            text-transform: uppercase;
+        }
+
+        /* Box Model Example */
+        .box-model-example {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Basics Examples</h1>
+    </header>
+    <main>
+        <!-- Element Selector Example -->
+        <p>This paragraph uses the element selector. Notice its color, font size, and border.</p>
+
+        <!-- Class Selector Example -->
+        <p class="highlight">This paragraph uses the class selector to apply a highlight background and bold text.</p>
+
+        <!-- ID Selector Example -->
+        <p id="special-text">This paragraph uses the ID selector with unique styling.</p>
+
+        <!-- Attribute Selector Example -->
+        <label for="text-input">Text Input:</label>
+        <input type="text" id="text-input" placeholder="Type here">
+
+        <!-- Font Properties Example -->
+        <div class="font-example">This text demonstrates custom font settings.</div>
+
+        <!-- Text Properties Example -->
+        <div class="text-example">This text has centered alignment, a line height of 1.8, and uppercase transformation.</div>
+
+        <!-- Box Model Example -->
+        <div class="box-model-example">
+            This box demonstrates the box model. It has a margin, padding, border, and background color.
+        </div>
+    </main>
+</body>
+</html>

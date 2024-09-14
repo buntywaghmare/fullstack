@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Advanced Styling Examples</title>
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #3F51B5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Custom Properties (CSS Variables) */
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #FFC107;
+            --transition-duration: 0.3s;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: var(--primary-color);
+            margin: 20px auto;
+            transition: transform var(--transition-duration), background-color var(--transition-duration);
+        }
+
+        .box:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.2) rotate(15deg);
+        }
+
+        /* Animations */
+        .animation-box {
+            width: 150px;
+            height: 150px;
+            background-color: #FF5722;
+            margin: 20px auto;
+            animation: bounce var(--transition-duration) infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Transformations */
+        .transformation-box {
+            width: 150px;
+            height: 150px;
+            background-color: #009688;
+            margin: 20px auto;
+            transform: skew(-10deg, 10deg);
+            transition: transform var(--transition-duration);
+        }
+
+        .transformation-box:hover {
+            transform: scale(1.1) rotate(-10deg) skew(0deg, 0deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Advanced Styling Examples</h1>
+    </header>
+    <main class="container">
+        <!-- Custom Properties (CSS Variables) -->
+        <div class="box">Hover me!</div>
+
+        <!-- Animations -->
+        <div class="animation-box">I bounce!</div>
+
+        <!-- Transformations -->
+        <div class="transformation-box">Hover to Transform</div>
+    </main>
+</body>
+</html>

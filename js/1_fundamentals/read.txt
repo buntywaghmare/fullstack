@@ -1,0 +1,32 @@
+I've created an artifact with detailed examples and explanations for the fundamental concepts in JavaScript. Let's go through each section:
+
+1. Variables and Data Types:
+   - We cover the three ways to declare variables: `var`, `let`, and `const`.
+   - Examples of all primitive types are shown: string, number, boolean, null, undefined, symbol, and bigint.
+   - An object is also demonstrated, showing how to create a simple object literal.
+
+2. Operators and Expressions:
+   - Arithmetic operators are shown with basic math operations.
+   - Comparison operators demonstrate loose equality (`==`), strict equality (`===`), and greater than (`>`).
+   - Logical operators (`&&`, `||`, `!`) are used in boolean logic examples.
+
+3. Control Structures:
+   - An `if...else` statement checks age for voting eligibility.
+   - A `switch` statement handles different days of the week.
+   - Various types of loops are demonstrated:
+     - `for` loop counting from 0 to 4.
+     - `while` loop counting to 2.
+     - `do...while` loop ensuring the block runs at least once.
+     - `for...in` loop iterating over object properties.
+     - `for...of` loop iterating over array elements.
+
+4. Functions:
+   - A function declaration `greet()` shows basic syntax.
+   - A function expression `sayGoodbye` assigns an anonymous function to a variable.
+   - An arrow function `multiply` demonstrates concise syntax for simple functions.
+   - The `welcome()` function shows how to use default parameters.
+   - Function calls demonstrate how to use these functions and what they return.
+
+These examples cover the core fundamentals of JavaScript, providing a solid foundation for understanding more complex concepts. Each example is accompanied by comments explaining what it does.
+
+Would you like me to elaborate on any specific part of these fundamentals, or shall we move on to the next topic?

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features Example</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Features</h1>
+    </header>
+    
+    <section>
+        <h2>Multimedia</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <section>
+        <h2>Canvas</h2>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <script>
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#FF0000';
+            ctx.fillRect(0, 0, 150, 75);
+        </script>
+    </section>
+    
+    <section>
+        <h2>Form Example</h2>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <section>
+        <h2>Geolocation</h2>
+        <button onclick="getLocation()">Get Location</button>
+        <p id="location"></p>
+        <script>
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    document.getElementById('location').textContent = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function showPosition(position) {
+                document.getElementById('location').textContent = "Latitude: " + position.coords.latitude +
+                " Longitude: " + position.coords.longitude;
+            }
+        </script>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 HTML5 Features</p>
+    </footer>
+</body>
+</html>

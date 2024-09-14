@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Example</title>
+    <style>
+        /* Block */
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        /* Modifier */
+        .button--large {
+            padding: 15px 30px;
+            font-size: 18px;
+        }
+
+        .button--primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button--primary:hover {
+            background-color: #45a049;
+        }
+
+        /* Element */
+        .button__icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <button class="button button--primary button--large">
+        <span class="button__icon">🔍</span>
+        Search
+    </button>
+</body>
+</html>
